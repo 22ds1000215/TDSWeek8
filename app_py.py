@@ -10,8 +10,8 @@ Original file is located at
 import streamlit as st
 def main():
     st.title('Subtraction Of Two Inputs')
-    number1 = st.int(input('Insert Value1'))
-    number2 = st.int(input('Insert Value2'))
+    number1 = st.number_input('Insert Value1')
+    number2 = st.number_input('Insert Value2')
     subtraction=number1-number2
     st.write('The subtraction of above numbers is  Number1-Number2 ', subtraction)
     
