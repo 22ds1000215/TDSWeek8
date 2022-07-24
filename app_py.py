@@ -8,8 +8,12 @@ Original file is located at
 """
 
 import streamlit as st
-
-st.write("""
-# Hello World!
-This is my **First** *app*
-""")
+def main():
+    st.title('Subtraction Of Two Inputs')
+    number1 = st.int(input('Insert Value1'))
+    number2 = st.int(input('Insert Value2'))
+    subtraction=number1-number2
+    st.write('The subtraction of above numbers is  Number1-Number2 ', subtraction)
+    
+if __name__ == "__main__":
+    main()
